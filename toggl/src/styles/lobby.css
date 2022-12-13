@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.cdnfonts.com/css/gotham');
+
+:root {
+    --main: #f56161;
+    --secondary: #3A607A;
+    --bgb: #CCD6DC;
+    --bgp: #FBCBCB;
+    --white: #FEFEFE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* KOPTEKST */
+h1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+    color: var(--secondary);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Gotham;
+    text-align: center;
+    padding-top: 10%;
+}
+/*algemene tekst enzo*/
+p {
+    font-family: Roboto;
+    font-size: 110%;
+
+}
+h2{
+    font-size: 18px;
+    color: var(--secondary);
+    font-family: Gotham;
+}
+.myBubbleUI {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../img/bckgr-lobby.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.interestBubbleUI {
+	width: 100vw;
+	height: 100vh;
+	background-color: tomato;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.childComponent {
+	width: 100%; /* width expands to fit bubble */
+	height: 100%; /* width expands to fit bubble */
+	border-radius: 50%; /* rounded border forms a circle */
+	background-color: white;
+	filter: drop-shadow(0px 1px 1px rgba(245, 97, 97)); /* drop shadow */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+    cursor: pointer;
+}
+
+.childComponent:hover{
+    border: solid 5px var(--main);
+  
+}
+.childComponent img {
+	width: 100%;
+	height: 100%;
+}
+
+/*popup avatar*/
+.popUp{
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80vw;
+	height: 50vh;
+	background-color: white;
+	border-radius: 10px;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
+
+}
+
+.optie{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #F56161;
+    color: #FEFEFE;
+    border:0;
+    font-family: Roboto;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+.close{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translate(-100%, 0%);
+    width: 40px;
+    padding: 10px 0;
+    background: #F56161;
+    color: #FEFEFE;
+    border:0;
+    font-size: 18px;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popUp img{
+    margin-top: 20px;
+    width: 200px;
+    border-radius: 50%;
+}

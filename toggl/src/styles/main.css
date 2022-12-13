@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.cdnfonts.com/css/gotham');
+
+:root {
+    --main: #f56161;
+    --secondary: #3A607A;
+    --bgb: #CCD6DC;
+    --bgp: #FBCBCB;
+    --white: #FEFEFE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*FONTS*/
+@font-face {
+    font-family: Gotham;
+    src: url(https://fonts.cdnfonts.com/css/gotham);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+}
+
+
+
+
+/* NAVBAR */
+.nav-bar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%, 0);
+}
+
+/* Nav button general */
+
+.nav-main-btn {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    background: var(--main);
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transform: translateY(-30px);
+}
+
+/* Button + */
+/* .nav-main-btn a ion-icon {
+    color: var(--white);
+    font-size: 40px;
+    padding-top: 5px;
+} */
+
+/* Button Leaderboard */
+.nav-main-btn a ion-icon {
+    color: var(--white);
+    font-size: 40px;
+    padding-top: 5px;
+}
+
+.add-outline {
+    width: 20px;
+    height: 20px;
+}
+
+/* Menu */
+.menu-main {
+    position: absolute;
+    width: 100vw;
+    height: 70px;
+    background: var(--white);
+    border-radius: 40px 40px 0px 0px;
+}
+
+.menu-main ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    line-height: 80px;
+    padding-left: 0;
+}
+
+.menu-main ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.menu-main ul li a {
+    display: block;
+    font-size: 2em;
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.menu-main ul li:hover a {
+    color: var(--main);
+}
+
+/* NAVBAR END */

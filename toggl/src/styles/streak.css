@@ -1,0 +1,237 @@
+/* STREAKKALENDER */
+
+.flame {
+    position: absolute;
+    right: 30px;
+    top: 38px;
+    font-size: 2.25rem;
+    line-height: 0;
+    color: var(--main);
+    z-index: 100;
+}
+
+.wrapper {
+    width: 450px;
+    background: var(--white);
+    border-radius: 50px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    margin: 0 auto;
+}
+
+.wrapper header {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+
+header .icons {
+    display: flex;
+}
+
+header .icons span {
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: var(--bgb);
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+}
+
+.icons span:last-child {
+    margin-right: -10px;
+}
+
+header .current-date {
+    font-size: 1.45rem;
+    font-weight: 500;
+    font-family: 'Gotham';
+    color: var(--secondary);
+}
+
+.calendar {
+    padding: 20px;
+    width: 100%;
+}
+
+div .popup-overlay {
+    background: rgba(58, 96, 122, 0.50);
+}
+
+div .popup-content {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 30px;
+}
+
+.calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+
+.calendar .days {
+    margin-bottom: 20px;
+}
+
+.calendar li {
+    color: var(--secondary);
+    font-size: 1.07rem;
+}
+
+.calendar .weeks li {
+    font-weight: 500;
+    cursor: default;
+    font-family: 'Gotham';
+}
+
+.calendar .days li {
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+    font-family: 'Roboto';
+}
+
+.days li.inactive {
+    color: var(--bgb);
+}
+
+.days li.active {
+    color: var(--white);
+}
+
+.days li::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.days li.active::before {
+    background: var(--main);
+}
+
+.days li:not(.active):hover::before {
+    background: var(--bgb);
+}
+
+/* STREAKKALENDER END */
+
+/* STREAK COUNTER */
+
+.streak-container {
+    border-radius: 50px;
+    background-color: var(--white);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.streak-container .row {
+    align-items: center;
+}
+
+.streak-container .row .col {
+    text-align: center;
+}
+
+.streak-container .row .item-1 {
+    font-size: 42px;
+    line-height: 0;
+    color: var(--main);
+}
+
+.streak-container .row .item-2 {
+    color: var(--secondary);
+    font-size: 18px;
+}
+
+.streak-container .row .item-3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--main);
+}
+
+.list-container-streak {
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.list-group-streak {
+    border-radius: 30px;
+    background-color: var(--white);
+}
+
+.list-group-item-streak {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+}
+
+.list-group-streak a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+}
+
+.list-group-streak a {
+    margin: 0 auto;
+}
+
+.right-txt {
+    margin-left: 60px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: var(--main);
+    text-align: center;
+}
+
+/* STREAK COUNTER END */
+
+/* MEDIA QUERIES */
+/* IPAD TABLETS */
+@media (max-width: 500px) {
+    .wrapper {
+        width: 345px;
+    }
+
+    .wrapper header {
+        padding: 25px 30px 10px;
+    }
+
+    .calendar {
+        padding: 5px 0;
+    }
+
+    .calendar .days li {
+        margin-top: 10px;
+    }
+}
+
+/* COMPUTERS SMOL */
+@media (min-width: 600px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+/* MEDIA QUERIES END */

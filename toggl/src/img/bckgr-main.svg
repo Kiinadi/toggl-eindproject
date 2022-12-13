@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="393" height="852" viewBox="0 0 393 852">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-bckgr-main);
+      }
+
+      .cls-2 {
+        fill: #faafaf;
+        opacity: 0.63;
+      }
+
+      .cls-3 {
+        fill: #3a607a;
+        opacity: 0.26;
+      }
+
+      .cls-4, .cls-5, .cls-7 {
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke: #3a607a;
+        stroke-width: 20px;
+      }
+
+      .cls-4, .cls-5 {
+        opacity: 0.48;
+      }
+
+      .cls-5 {
+        stroke: #ee8484;
+        stroke-width: 10px;
+      }
+
+      .cls-6 {
+        stroke: none;
+      }
+
+      .cls-8 {
+        fill: #fefefe;
+      }
+    </style>
+    <clipPath id="clip-bckgr-main">
+      <rect width="393" height="852"/>
+    </clipPath>
+  </defs>
+  <g id="bckgr-main" class="cls-1">
+    <rect class="cls-8" width="393" height="852"/>
+    <circle id="Ellipse_44" data-name="Ellipse 44" class="cls-2" cx="216.5" cy="216.5" r="216.5" transform="translate(197 118)"/>
+    <path id="Path_40" data-name="Path 40" class="cls-3" d="M626,717v672h392.767s22.82-218.739-85.958-256.935-73.015-114.589-157.952-155.332-61.562-79-95.5-163.2S626,717,626,717Z" transform="translate(-626 -537)"/>
+    <g id="Ellipse_45" data-name="Ellipse 45" class="cls-4" transform="translate(326 600)">
+      <ellipse class="cls-6" cx="80" cy="78" rx="80" ry="78"/>
+      <ellipse class="cls-7" cx="80" cy="78" rx="70" ry="68"/>
+    </g>
+    <g id="Ellipse_46" data-name="Ellipse 46" class="cls-5" transform="translate(-42 475)">
+      <ellipse class="cls-6" cx="42.5" cy="41.5" rx="42.5" ry="41.5"/>
+      <ellipse class="cls-7" cx="42.5" cy="41.5" rx="37.5" ry="36.5"/>
+    </g>
+  </g>
+</svg>

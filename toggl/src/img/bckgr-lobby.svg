@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="393" height="852" viewBox="0 0 393 852">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-bckgr-lobby);
+      }
+
+      .cls-2 {
+        fill: #fbd6d6;
+        opacity: 0.5;
+      }
+
+      .cls-3 {
+        fill: #e4e9ec;
+      }
+
+      .cls-4 {
+        fill: #fefefe;
+      }
+    </style>
+    <clipPath id="clip-bckgr-lobby">
+      <rect width="393" height="852"/>
+    </clipPath>
+  </defs>
+  <g id="bckgr-lobby" class="cls-1">
+    <rect class="cls-4" width="393" height="852"/>
+    <path id="Path_40" data-name="Path 40" class="cls-2" d="M626,717v672h392.767s22.82-218.739-85.958-256.935-73.015-114.589-157.952-155.332-61.562-79-95.5-163.2S626,717,626,717Z" transform="translate(-626 -537)"/>
+    <path id="blob_1_" data-name="blob (1)" class="cls-3" d="M189.6,19.372c34.34,31.742,125.455,47.715,146.569,114.8S308.4,257.924,274.056,287.7,169.8,303.082,109.47,292.938-1.594,276.9-26.653,247.126s-24.75-83.444-14.54-126.312S-53.062,30.615-28-1.127C-2.944-33.2,69.561-50,98.642-48.365,127.723-47.056,155.567-12.7,189.6,19.372Z" transform="matrix(-0.588, -0.809, 0.809, -0.588, 392.011, 524.519)"/>
+  </g>
+</svg>

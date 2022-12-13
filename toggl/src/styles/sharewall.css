@@ -1,0 +1,199 @@
+:root {
+    --main: #f56161;
+    --secondary: #3A607A;
+    --bgb: #CCD6DC;
+    --bgp: #FBCBCB;
+    --white: #FEFEFE;
+}
+
+.fotoShare img {
+    max-height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+body{
+    background:var(--bgb)
+}
+  
+h4{
+    display: flex;
+    justify-content: center;
+    color: var(--secondary);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Gotham;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  
+  .kader {
+    width: 80%;
+    height: 20vh;
+    background-color: #FEFEFE;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    padding: 2%;
+    border-radius: 30px;
+    margin-left: 10%;
+    z-index: 10;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
+  }
+  
+  .kaderButton {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .titelShare {
+    background-color: #FEFEFE;
+    grid-area: 1 / 2 / 2 / 5;
+    font-size: 18px;
+    color: #F56161;
+    font-weight: bold;
+    border: none;
+    align-content: center;
+    margin-left: 30%;
+    margin-right: auto;
+    outline: none;
+    width: 120px;
+  }
+  
+  .inhoudShare {
+    grid-area: 2 / 2 / 5 / 5;
+    border: none;
+    outline: none;
+    background-color: #FEFEFE;
+  
+  }
+  
+  ::placeholder {
+    color: #F56161;
+  }
+  
+  .submitButton {
+    padding: 10px 60px;
+    background: #F56161;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 4%;
+    display: flex;
+    float: right;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FEFEFE;
+  }
+  
+  img {
+    background-color: #FEFEFE;
+  }
+  
+  img.fotoShare {
+    border-radius: 30px;
+  }
+  
+  label {
+    grid-area: 5 / 1 / 6 / 2;
+    background-color: #FEFEFE;
+  }
+  
+  #file {
+    display: none;
+  }
+  
+  .icon {
+    height: 24px;
+    margin-left: 5px;
+  }
+  
+  /* Masonry */
+  .my-masonry-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -30px;
+    /* gutter size offset */
+    width: 100vw;
+    padding: 32px 16px;
+  }
+  
+  .my-masonry-grid_column {
+    padding-left: 30px;
+    /* gutter size */
+    background-clip: padding-box;
+  }
+  
+  /* Style your items */
+  .my-masonry-grid_column>div {
+    /* change div to reference your elements you put in <Masonry> */
+    background: none;
+    margin-bottom: 30px;
+  }
+  
+  .my-masonry-grid img {
+    max-height: 100%;
+    width: 100%;
+  }
+  
+  @media (max-width: 800px) {
+    .my-masonry-grid {
+      margin-left: -15px;
+      /* gutter size offset */
+    }
+  
+    .my-masonry-grid_column {
+      padding-left: 15px;
+      /* gutter size offset */
+    }
+  
+    .my-masonry-grid_column>div {
+      margin-bottom: 15px;
+      /* space between items */
+    }
+  }
+  
+  /* .Share{
+      z-index: 10px;
+  
+    }
+     */
+  #popup-root .popup-content {
+    border-radius: 10px;
+  }
+  
+  .sharebutton {
+    display: flex;
+    justify-content: center;
+    width: 75vw;
+    padding: 10px 0;
+    background: #F56161;
+    color: #FEFEFE;
+    border: 0;
+    font-family: Roboto;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  .week {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+  }
+  .deel{
+    display: flex;
+    justify-content: center;
+  }
+
+  .week{
+    color:#F56161;
+    font-family: Roboto;
+    text-decoration: none;
+    cursor: pointer;
+
+  }

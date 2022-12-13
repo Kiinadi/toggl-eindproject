@@ -1,0 +1,64 @@
+
+.quizz{
+    background-image: url(../img/bckgr-main.svg);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%,0%);
+    color: var(--secondary);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Gotham;
+    text-align: center;
+    
+}
+h2{
+    padding-top: 5%;
+    padding-left: 5%;
+    font-size: 18px;
+    color: var(--secondary);
+    font-family: Gotham;
+}
+h3{
+    padding-top: 5%;
+    padding-left: 5%;
+    font-size: 16px;
+    color:var(--secondary);
+    font-family: Roboto;
+}
+
+.theme{
+    background: white;
+    width: 80vw;
+    height: 15vh;
+    border-radius: 20px;
+    filter: drop-shadow( 10px 10px 2px rgba(0,0,0,0.2));
+}
+.fofo{
+    position: absolute;
+    width: 25vw;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+}
+.speel{
+    margin-top: 5%;
+    margin-left: 5%;
+    padding: 5px 40px;
+    background: var(--main);
+    color: var(--white);
+    border: 0;
+    outline:none;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 4%;
+}
